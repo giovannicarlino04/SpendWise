@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense and Income Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="max-width: 400px; margin: 0 auto;">
+        <h1>Expense and Income Tracker</h1>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description">
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+
+        <button onclick="addTransaction()">Add Transaction</button>
+
+        <h2>Transactions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTableBody">
+                <!-- Transaction data will be displayed here -->
+            </tbody>
+        </table>
+
+        <h2 id="balance">Balance: $0.00</h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
